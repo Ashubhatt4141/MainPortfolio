@@ -1,0 +1,7 @@
+@import '../styles/global.scss';
+.container{
+    // background-color: black;
+    overflow-x: clip;
+    position: relative;
+    color: $primary;
+}

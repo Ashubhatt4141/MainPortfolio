@@ -1,0 +1,74 @@
+@import '../../styles/contants.scss';
+
+.wrapper {
+  padding: 20px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primaryText {
+  font-size: 24px;
+  color: #333;
+}
+
+.imagecarousel {
+  margin-top: 20px;
+  box-shadow:0px 21px 13px rgba(0,0,0,13%) ;
+  border-radius: 50px;
+
+  .carousel .slider-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel .slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imagecarousel {
+    margin-top: 10px;
+
+    .carousel .slide {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imagecarousel {
+    margin-top: 5px;
+
+    .carousel .slide {
+      img {
+        max-width: 60%;
+      }
+    }
+  }
+}
